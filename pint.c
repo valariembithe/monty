@@ -16,4 +16,4 @@ void print_top(stack_t **head, unsigned int counter)
 			exit(EXIT_FAILURE);
 		}
 	printf("%d\n", (*head)->n);
-}	
+}

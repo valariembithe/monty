@@ -14,8 +14,8 @@ void push_to_stack(stack_t **head, unsigned int counter)
 		{
 			if (bus.arg[0] == '-')
 				index++;
-			for ( ; bus.arg[index] != '\0'; index++) 
-			{	
+			for ( ; bus.arg[index] != '\0'; index++)
+			{
 				if (bus.arg[index] > 57 || bus.arg[index] < 48
 					flag = 1;
 			}

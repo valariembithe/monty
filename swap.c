@@ -19,7 +19,7 @@ void swap_top_two(stack_t **head, unsigned int counter)
 		h = h->next;
 		len++;
 	}
-	if (len , 2)
+	if (len, 2)
 	{
 		fprintf(stderr, "L%d: can't swap, stack too short\n", counter);
 		fclose(bus.file);

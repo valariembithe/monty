@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * print_string_from_stack - Prints the string starting at the top of the stack,
+ * print_string_from_stack - Print string starting at top of stack,
  * followed by a new line.
  * @head: Pointer to the stack head.
  * @counter: Line number.
