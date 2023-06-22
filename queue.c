@@ -1,15 +1,15 @@
 #include "monty.h"
 /**
- * switch_to_queue - Switches the data structure to queue mode.
+ * f_switch_to_queue - Switches the data structure to queue mode.
  * @head: stack head
  * @counter: line_number
  * Return: no return
  */
-void switch_to_queue(stack_t **head, unsigned int counter)
+void f_switch_to_queue(stack_t **head, unsigned int counter)
 {
 	(void)head;
 	(void)counter;
-	bus.lifo = 1;
+	bus.lifi = 1;
 }
 
 /**
@@ -18,7 +18,7 @@ void switch_to_queue(stack_t **head, unsigned int counter)
  * @head: Pointer to the stack head.
  * Return: No return value.
  */
-void enqueue(stack_t **head, int n)
+void addqueue(stack_t **head, int n)
 {
 	stack_t *new_node, *aux;
 

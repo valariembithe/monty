@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * print_string_from_stack - Print string starting at top of stack,
+ * f_printstring - Print string starting at top of stack,
  * followed by a new line.
  * @head: Pointer to the stack head.
  * @counter: Line number.
  * Return: No return value.
  */
-void print_string_from_stack(stack_t **head, unsigned int counter)
+void f_printstr(stack_t **head, unsigned int counter)
 {
 	stack_t *top;
 	(void)counter;

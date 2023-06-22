@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * push_to_stack - Adds a node to the stack.
+ * f_push_to_stack - Adds a node to the stack.
  * @head: Pointer to the stack head.
  * @counter: Line number.
  * Return: No return value.
  */
-void push_to_stack(stack_t **head, unsigned int counter)
+void f_push_to_stack(stack_t **head, unsigned int counter)
 {
 		int value, index = 0, flag = 0;
 
@@ -16,7 +16,7 @@ void push_to_stack(stack_t **head, unsigned int counter)
 				index++;
 			for ( ; bus.arg[index] != '\0'; index++)
 			{
-				if (bus.arg[index] > 57 || bus.arg[index] < 48
+				if (bus.arg[index] > 57 || bus.arg[index] < 48)
 					flag = 1;
 			}
 			if (flag == 1)
@@ -39,7 +39,7 @@ void push_to_stack(stack_t **head, unsigned int counter)
 
 		value = atoi(bus.arg);
 		if (bus.lifi == 0)
-			add_node_to_stack(head, value);
+			addnode(head, value);
 		else
-			add_node_to_queue(head, value);
+			addqueue(head, value);
 }
